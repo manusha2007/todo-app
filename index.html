@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">✓</div>
+        <h1>My Tasks</h1>
+        <p>Plan your day. Make progress.</p>
+    </header>
+
+    <main class="todo-container">
+        <form id="task-form">
+            <input type="text" id="task-input"
+                   placeholder="What do you need to do?"
+                   autocomplete="off">
+            <button type="submit">+ Add</button>
+        </form>
+
+        <div class="task-summary">
+            <span id="remaining">0 remaining</span>
+            <span id="completed-count">0 completed</span>
+        </div>
+
+        <nav class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="active">Active</button>
+            <button class="filter" data-filter="completed">Completed</button>
+        </nav>
+
+        <ul id="task-list"></ul>
+
+        <footer class="task-footer">
+            <span id="total-count">0 total tasks</span>
+            <button id="clear-completed">Clear completed</button>
+        </footer>
+    </main>
+
+    <p class="bottom-text">Small steps every day lead to big results.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
